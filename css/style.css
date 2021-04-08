@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Mix */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  height: 100vh;
+  background-color: #1e2d3b;
+}
+
+/* intestazione */
+header {
+  background-color: #2E3A46;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+  margin-left: 20px;
+}
+/* /intestazione */
