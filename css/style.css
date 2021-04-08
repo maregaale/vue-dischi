@@ -40,12 +40,13 @@ header {
   background-color: #2E3A46;
   height: 70px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 header img {
   height: 50px;
-  margin-left: 20px;
 }
 /* /intestazione */
 
@@ -60,7 +61,7 @@ main {
 }
 
 /* carta */
-.card {
+.disk {
   background-color: #2E3A46;
   height: 270px;
   width: 150px;
@@ -72,7 +73,7 @@ main {
   margin: 12px;
 }
 
-.card img {
+.disk img {
   width: 100%;
 }
 /* /carta */
