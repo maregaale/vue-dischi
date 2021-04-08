@@ -19,6 +19,11 @@ const app = new Vue (
               this.genres.push(item.genre);
             }
           });
+
+          // ordinamento per anno di uscita
+          this.disks.sort(function (disk1, disk2) {
+            return disk1.year - disk2.year;
+          });
       });
     },
   }
