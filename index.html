@@ -31,14 +31,15 @@
     <div id="root">
       <header>
         <img src="img/logo.png" alt="logo">
-        <select class="genre_select" name="">
+        <select v-model="selected" class="genre_select">
+          <option disabled value="">Select genre</option>
           <option value="all">all</option>
           <option v-for="genre in genres" :value="genre">{{genre}}</option>
         </select>
       </header>
 
       <main>
-        <div v-for="disk in disks" class="disk">
+        <div v-if="selected == 'all' || disk.genre == selected" v-for="disk in disks" class="disk">
           <img :src="disk.poster" alt="disk.title">
           <h3>{{ disk.title }}</h3>
           <h4>{{ disk.author }}</h4>
