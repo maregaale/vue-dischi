@@ -39,7 +39,7 @@
       </header>
 
       <main>
-        <div v-if="selected == 'all' || disk.genre == selected" v-for="disk in disks" class="disk">
+        <div v-if="selected == '' || selected == 'all' || disk.genre == selected" v-for="disk in disks" class="disk">
           <img :src="disk.poster" alt="disk.title">
           <h3>{{ disk.title }}</h3>
           <h4>{{ disk.author }}</h4>

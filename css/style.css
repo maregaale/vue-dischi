@@ -48,6 +48,29 @@ header {
 header img {
   height: 50px;
 }
+
+header select {
+  padding: 5px;
+  border: 0;
+  width: 150px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+header select, header select option {
+  background-color: #abb0b5;
+}
+
+header select:focus {
+  outline: none;
+}
+
+header select:hover {
+  color: #fff;
+}
+
+header select option {
+  color: rgba(0, 0, 0, 0.6);
+}
 /* /intestazione */
 
 /* corpo della pagina */
@@ -60,7 +83,7 @@ main {
   padding: 80px;
 }
 
-/* carta */
+/* disco */
 .disk {
   background-color: #2E3A46;
   height: 270px;
@@ -76,5 +99,5 @@ main {
 .disk img {
   width: 100%;
 }
-/* /carta */
+/* /disco */
 /* /corpo della pagina */

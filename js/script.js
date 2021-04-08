@@ -4,7 +4,7 @@ const app = new Vue (
     data: {
       disks: [],
       genres: [],
-      selected: "all",
+      selected: "",
     },
     mounted: function () {
       // chiamata API
